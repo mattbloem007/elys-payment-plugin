@@ -4,14 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const Div = document.getElementById('elysPaymentGateway')
+const WidgetDivs = document.querySelectorAll('.elys_widget')
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App domElement={Div}/>
-  </React.StrictMode>,
-  Div
-);
+WidgetDivs.forEach(Div => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App domElement={Div}/>
+    </React.StrictMode>,
+    Div
+  );
+})
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
