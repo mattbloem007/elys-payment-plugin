@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const Div = document.getElementById('elysPaymentGateway')
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App domElement={Div}/>
   </React.StrictMode>,
-  document.getElementById('root')
+  Div
 );
 
 // If you want to start measuring performance in your app, pass a function
