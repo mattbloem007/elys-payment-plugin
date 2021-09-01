@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Web3 from "web3";
 import PaymentButton from '../components/paymentButton'
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 import detectEthereumProvider from '@metamask/detect-provider'
 
