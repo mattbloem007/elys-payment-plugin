@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-const WidgetDivs = document.querySelectorAll('.elys_widget')
+const WidgetDivs = document.querySelectorAll('.elysPaymentGateway')
 
 WidgetDivs.forEach(Div => {
   ReactDOM.render(
